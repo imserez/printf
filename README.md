@@ -4,7 +4,7 @@
 ![Type](https://img.shields.io/badge/Type-Variadic_Function-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
-## 📖 Overview
+## Overview
 
 **ft_printf** is a custom implementation of the standard C library function `printf`.
 
@@ -12,14 +12,14 @@ From a **Systems Engineering** perspective, this project is an exploration of **
 
 Unlike high-level string formatting, this implementation requires manual handling of data types, memory addressing for pointers, and efficient buffer management to write to `stdout` with minimal syscall overhead.
 
-## 🛠 Technical Concepts
+## Technical Concepts
 
 * **Variadic Arguments (`stdarg.h`):** Using macros (`va_start`, `va_arg`, `va_end`) to traverse the stack frame and retrieve undefined arguments.
 * **Format String Parsing:** Implementing a state machine to detect flags and dispatch execution to the correct type handler.
 * **Base Conversion:** Algorithms to convert numerical values (integers, memory addresses) into ASCII representations in varying bases (decimal, hexadecimal).
 * **Pointer Arithmetic:** Handling `void *` memory addresses for the `%p` conversion.
 
-## 📋 Supported Conversions
+## Supported Conversions
 
 The function handles the following standard format specifiers:
 
@@ -35,7 +35,7 @@ The function handles the following standard format specifiers:
 | `%X` | Prints a number in hexadecimal (base 16) uppercase format. | `unsigned int` |
 | `%%` | Prints a percent sign. | None |
 
-## 🚀 Usage
+## Usage
 
 ### Prototype
 ```c
@@ -83,9 +83,9 @@ gcc -Wall -Wextra -Werror -D BUFFER_SIZE=1024 \
     main.c get_next_line_bonus.c get_next_line_utils_bonus.c -o multi_fd_reader
 ```
 
-## 👨‍💻 Author
+## Author
 
-**Sergi Juarez** *Systems Software Engineer | RISC-V & Kernel Enthusiast*
+**Sergi Juarez**
 
 - **GitHub:** [imserez](https://github.com/imserez)
 - **LinkedIn:** [sergijuarez](https://www.linkedin.com/in/sergijuarez)
